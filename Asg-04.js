@@ -102,3 +102,29 @@ function oddFriend(arr) {
 // let Friends = ['Rana', "Mana", "Ana", "Kana", "Sona", "Salam"];
 // let OddFriend = oddFriend(Friends);
 // console.log(OddFriend);
+
+
+// Problem: Given an integer num, repeatedly add all its digits until the result has only one digit, and return it.
+
+function addDigits(num) {
+    
+    let result = 0, rem;
+    
+    if (num / 10 < 1) {
+        return num;
+    }
+    
+    while (num != 0) {
+            rem = num % 10;
+            result = result + rem; 
+            num = Math.floor(num / 10);
+        }
+    num = result;
+    
+    if (num / 10 >= 1) {
+            return addDigits(num);
+        }    
+    return num;
+}
+
+//console.log(addDigits(3856));
