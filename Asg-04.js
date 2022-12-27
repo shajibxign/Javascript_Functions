@@ -1,4 +1,4 @@
-././. Answer to the first question
+// Answer to the first question
 
 function anaToVori (ana) {
 
