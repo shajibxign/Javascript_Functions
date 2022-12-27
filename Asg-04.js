@@ -10,7 +10,7 @@ function anaToVori (ana) {
     return vori;   
 }
 
-// let x = 64;
+// let x = 64;.
 // let rslt = anaToVori(x);
 // console.log(rslt);
 
